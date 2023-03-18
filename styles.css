@@ -22,17 +22,37 @@ html {
   height: auto;
   background-size: cover;
   padding: 1.2rem;
+  position: relative;
 }
 
 .head {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .logo {
-  width: 10%;
+  width: 30%;
   height: auto;
+}
+
+.logo-link {
+  text-decoration: none;
+  color: white;
+}
+
+.hamburg-icon {
+  width: 50%;
+  height: 40%;
+}
+
+.navbar {
+  display: flex;
+}
+
+.links {
+  /* display: none; */
 }
 
 .welcome {
