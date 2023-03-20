@@ -59,7 +59,7 @@ html {
   display: none;
 }
 
-.links {
+.links-1 {
   /* display: none; */
 }
 
@@ -291,7 +291,7 @@ html {
     color: var(--text-color);
   }
 
-  .links {
+  .links-1 {
     display: none;
   }
 
@@ -313,10 +313,13 @@ html {
     font-weight: 700;
   }
 
-  .links-desk a:hover {
+  .links {
     text-decoration: none;
-    color: var(--bg-color);
     color: var(--text-color);
+  }
+
+  .links-desk a:hover {
+    color: var(--bg-color);
   }
 
   .links-desk a:active {
