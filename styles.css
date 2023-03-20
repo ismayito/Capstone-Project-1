@@ -315,11 +315,11 @@ html {
 
   .links {
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--bg-color);
   }
 
   .links-desk a:hover {
-    color: var(--bg-color);
+    color: var(--text-color);
   }
 
   .links-desk a:active {
