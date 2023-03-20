@@ -19,6 +19,7 @@ html {
 .head {
   position: fixed;
   background-color: #fff;
+  top: 0;
 }
 
 .header-about {
@@ -26,7 +27,7 @@ html {
   background-repeat: no-repeat;
   height: auto;
   background-size: cover;
-  padding: 1.2rem;
+  padding: 0;
   position: relative;
 }
 
@@ -167,7 +168,7 @@ html {
 
 .event1 {
   margin-top: 2.4rem;
-  background-image: url("./assets/images/event1.jpg");
+  background-image: url("./assets/images/event\ 1.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -175,7 +176,7 @@ html {
 }
 
 .event2 {
-  background-image: url("./assets/images/event2.jpg");
+  background-image: url("./assets/images/event2.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
