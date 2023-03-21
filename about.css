@@ -113,10 +113,11 @@ html {
   text-align: center;
   color: #606060;
   font-size: 1.2rem;
+  margin-bottom: 1.2rem;
 }
 
 .logo-events {
-  border: 1px solid rgb(90, 87, 87);
+  border: 1px solid rgb(202, 184, 184);
   margin-left: 2.4rem;
   margin-right: 2.4rem;
   margin-bottom: 2em;
@@ -145,10 +146,7 @@ html {
 
 .events {
   margin-top: 2.4rem;
-  border: 1px solid #606060;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+  border-top: 1px solid #dbcfcf;
   padding: 1.2rem 1.4rem;
 }
 
@@ -161,36 +159,58 @@ html {
 }
 
 .events-container {
+  margin-top: 4rem;
+  margin-bottom: 5rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 2.4rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
 }
 
 .event1 {
-  margin-top: 2.4rem;
-  background-image: url("./assets/images/event\ 1.png");
+  background-image: url("./assets/images/assembly.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: auto;
+  height: 100%;
+  background-blend-mode: multiply;
+  mix-blend-mode: multiply;
+  background-color: var(--text-color);
 }
 
 .event2 {
-  background-image: url("./assets/images/event2.png");
+  background-image: url("./assets/images/assembly.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-blend-mode: multiply;
+  mix-blend-mode: multiply;
+  background-color: var(--text-color);
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .events-heading {
   font-size: 2.4rem;
-  color: #0c0b0b;
+  color: #fff;
   font-family: "Lato", sans-serif;
   font-weight: 700;
   text-align: center;
   justify-content: center;
   align-items: center;
+}
+
+.events-paragragh {
+  font-size: 2.4rem;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1.4rem;
 }
 
 .footer {
@@ -234,4 +254,32 @@ html {
   font-family: "Lato", sans-serif;
   font-size: 1.2rem;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .events-container {
+    flex-direction: row;
+    gap: 12px;
+  }
+
+  .events-paragragh {
+    font-size: 1.2rem;
+  }
+
+  .logo-events {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+  }
+
+  .event2 {
+    width: auto;
+    height: auto;
+  }
+
+  .event1 {
+    width: auto;
+    height: auto;
+  }
 }
