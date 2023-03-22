@@ -42,7 +42,7 @@ html {
 }
 
 .heading-about {
-  font-size: 2.8rem;
+  font-size: 2.4rem;
   margin-top: 0.2rem;
   font-family: "Lato", sans-serif;
   font-weight: 800;
@@ -179,6 +179,7 @@ html {
   background-blend-mode: multiply;
   mix-blend-mode: multiply;
   background-color: var(--text-color);
+  transition: transform 0.2s ease-out;
 }
 
 .event2 {
@@ -190,6 +191,15 @@ html {
   background-color: var(--text-color);
   width: 100%;
   height: 100%;
+  transition: transform 0.2s ease-out;
+}
+
+.event1:hover {
+  transform: scale(1.1);
+}
+
+.event2:hover {
+  transform: scale(1.1);
 }
 
 .events-heading {
@@ -260,6 +270,15 @@ html {
   .events-container {
     flex-direction: row;
     gap: 12px;
+  }
+
+  .article-info {
+    font-size: 1.2rem;
+    color: #616e84;
+  }
+
+  .title-about {
+    color: #272a31;
   }
 
   .events-paragragh {
