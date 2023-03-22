@@ -66,8 +66,18 @@ section.visible {
   background-repeat: no-repeat;
   height: auto;
   background-size: cover;
-  padding: 1.2rem;
   position: relative;
+}
+
+.my-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: auto;
+  padding-right: auto;
 }
 
 .head {
@@ -75,6 +85,7 @@ section.visible {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1.6rem 1.8rem;
 }
 
 .head-desktop {
@@ -82,13 +93,15 @@ section.visible {
 }
 
 .logo {
-  width: 30%;
-  height: auto;
+  width: 50px;
+
+  /* width: 50%; */
+
+  /* height: auto; */
 }
 
 .logo-link {
-  text-decoration: none;
-  color: white;
+  display: none;
 }
 
 .hamburg-icon {
@@ -110,6 +123,8 @@ section.visible {
   margin-bottom: 0;
   padding-top: 3em;
   font-weight: 300;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
   font-family: "Lato", sans-serif;
 }
 
@@ -119,6 +134,8 @@ section.visible {
   font-family: "Lato", sans-serif;
   font-weight: 800;
   font-style: oblique;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
   line-height: 30px;
   color: rgba(255, 30, 5, 0.8);
   margin-bottom: 2rem;
@@ -143,6 +160,13 @@ section.visible {
   color: #606060;
   font-family: "COCOGOOSE", sans-serif;
   font-weight: 700;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+}
+
+.connect {
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
 }
 
 .schedule p {
@@ -189,6 +213,8 @@ section.visible {
   list-style: none;
   align-items: center;
   gap: 3rem;
+  height: 180px;
+  width: 300px;
   background-color: rgba(61, 64, 72, 0.6);
   padding: 16px 12px;
 }
@@ -239,7 +265,7 @@ section.visible {
 
 .speakers {
   display: flex;
-  gap: 1.5rem;
+  gap: 2.4rem;
   margin-bottom: 2.4rem;
 }
 
@@ -282,8 +308,44 @@ section.visible {
   margin-top: 14px;
 }
 
+.copy-right-dektop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.4rem;
+  padding: 1.8rem;
+  gap: 2.4rem;
+}
+
+.footer-home {
+  display: none;
+}
+
 /* desktop version */
 @media screen and (min-width: 768px) {
+  .logo-link {
+    display: block;
+    padding: 2rem;
+    text-decoration: none;
+    color: white;
+  }
+
+  .logo {
+    padding-top: 2rem;
+    display: block;
+  }
+
+  .head {
+    padding: 0;
+  }
+
+  .header-desktop {
+    display: flex;
+    justify-content: space-between;
+    width: 87%;
+    align-items: center;
+  }
+
   .hamburg-icon {
     display: none;
   }
@@ -293,6 +355,7 @@ section.visible {
   }
 
   .head-desktop {
+    width: 100%;
     display: block;
   }
 
@@ -341,11 +404,11 @@ section.visible {
 
   .navbar-desk {
     display: flex;
-    padding-top: 3.5rem;
+    padding-top: 2rem;
   }
 
-  .logo {
-    padding-top: 3.5rem;
+  .head-desk1 {
+    width: 87%;
   }
 
   .links-desk {
@@ -387,6 +450,8 @@ section.visible {
   .welcome {
     padding-top: 10.8rem;
     font-size: 2.8rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
     padding-bottom: 1.4rem;
     letter-spacing: 2px;
   }
@@ -476,8 +541,13 @@ section.visible {
     margin-left: auto;
     margin-right: auto;
     display: grid;
-    gap: 1.4rem;
+    gap: 1.8rem;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-home {
+    margin-top: 2.4rem;
+    display: block;
   }
 
   .copy-logo-desktop {
