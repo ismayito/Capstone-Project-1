@@ -18,7 +18,7 @@ html {
 
 .head {
   position: fixed;
-  background-color: #fff;
+  background-color: transparent;
   top: 0;
 }
 
@@ -35,7 +35,7 @@ html {
   color: var(--text-color);
   font-size: 2rem;
   margin-bottom: 0;
-  padding-top: 3em;
+  padding-top: 8rem;
   font-weight: 300;
   font-family: "Lato", sans-serif;
   text-align: center;
@@ -69,16 +69,14 @@ html {
 .contact-us {
   font-family: "Lato", sans-serif;
   font-size: 1.2rem;
-  color: #fff;
+  color: #242222;
   padding: 0.4rem;
   text-align: center;
-  background-color: #272a31;
 }
 
 .contact-link {
   font-size: 1.2rem;
-  color: #fff;
-  background-color: #272a31;
+  color: #242222;
   padding: 0.2rem;
 }
 
@@ -224,7 +222,7 @@ html {
 }
 
 .footer {
-  margin: 2.4rem 0;
+  margin-top: 2.4rem;
 }
 
 .partners {
@@ -250,8 +248,10 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 2.4rem 0;
-  padding: 1.2rem;
+  margin-top: 2.4rem;
+  padding: 3rem;
+  gap: 2.4rem;
+  background-color: var(--bg-color);
 }
 
 .copy-logo {
@@ -260,7 +260,7 @@ html {
 }
 
 .copy {
-  color: #606060;
+  color: #a59e9e;
   font-family: "Lato", sans-serif;
   font-size: 1.2rem;
   text-align: center;
